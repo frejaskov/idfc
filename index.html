@@ -98,6 +98,7 @@ Let me tell you, agent, I really have outdone myself this time. The Fuck-around-
  Every single speaker is then connected to my lovely little machine here, and when I flip the switch, all of the speakers will activate, 
  making every single citizen in the Tristate area extremely recless. That's what the high frequency soundwave does, by the way, 'cause I
  think I forgot to tell you that.<br>
+  <br>
 ...Wait, now that I think about it, buying all those speakers was probably a lot more expensive than the electricity bill would have been...<br>
 </div>
 
@@ -201,11 +202,11 @@ document.querySelectorAll('.ukword').forEach(el => {
     wordPopup.innerHTML =
       `<b>${word}</b><br>${tr}
       <hr>
-      <button onclick="saveWord(${
+      <button onclick='saveWord(${
         JSON.stringify(word)
       }, ${
         JSON.stringify(tr)
-      })">Save Word</button>`;
+      })'>Save Word</button>`;
   });
 
   el.addEventListener('mouseleave', scheduleHide);
